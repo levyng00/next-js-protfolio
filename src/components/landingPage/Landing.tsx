@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 import CustomText from "../CustomText";
 import NavMenu from "../navMenu/NavMenu";
 const Landing = () => {
-  // const mousePosition = useMousePosition();
-  // const circleWidth = 200;
+  const mousePosition = useMousePosition();
+  const circleWidth = 200;
   return (
-    <Section className="h-screen  flex items-center">
-      {/* <motion.div
+    <Section className="h-screen  flex items-center ">
+      <motion.div
         className={`rounded-full bg-purple-800 absolute left-0 top-0 blur-3xl opacity-45`}
         animate={{
-          x: mousePosition.x - circleWidth / 2,
-          y: mousePosition.y - circleWidth / 2,
+          x: mousePosition?.x != null ? mousePosition.x - circleWidth / 2 : 0,
+          y: mousePosition?.y != null ? mousePosition.y - circleWidth / 2 : 0,
         }}
         style={{ height: circleWidth, width: circleWidth }}
         transition={{ duration: 0.02 }}
-      ></motion.div> */}
+      ></motion.div>
       <div className="">
         <div className=" flex flex-col gap-7 text-xl p-2">
           <CustomText className="">Hi, my name is</CustomText>

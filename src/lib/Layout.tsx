@@ -16,7 +16,7 @@ const Layout = ({ children }: layoutTypes) => {
     <>
       <div className="relative z-[9999] ">
         <Navbar />
-        {/* {navState && <NavMenu />} */}
+        {navState && <NavMenu />}
       </div>
       <div className="relative z-0">{children}</div>
       <Footer />

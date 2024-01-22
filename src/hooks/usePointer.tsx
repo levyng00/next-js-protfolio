@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
-
-const useMousePosition = () => {
+type MousePosition = {
+  x: number | null;
+  y: number | null;
+};
+const useMousePosition = (): MousePosition => {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
 
   const updateMousePosition = (e: any) => {

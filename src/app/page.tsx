@@ -5,6 +5,7 @@ import WhereWork from "@/components/experience/WhereWork";
 import AboutMe from "@/components/landingPage/AboutMe";
 import Landing from "@/components/landingPage/Landing";
 import Card from "@/components/myProjects/Card";
+import NavMenu from "@/components/navMenu/NavMenu";
 import Projects from "@/components/projects/Projects";
 import { useNavStore } from "@/hooks/store/useStore";
 import useMousePosition from "@/hooks/usePointer";
@@ -17,6 +18,7 @@ export default function Home() {
     <Layout>
       <div className={`${navState ? "h-screen overflow-hidden" : ""}`}>
         <Landing />
+       
         <AboutMe />
         <WhereWork />
         <Projects />
