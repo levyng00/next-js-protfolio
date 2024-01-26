@@ -17,25 +17,21 @@ const WhereWork = () => {
   };
 
   return (
-    <Section className="h-screen flex items-center justify-center ">
-      <div className=" ">
-        <h1 className="text-5xl font-bold  mb-10 border-b-2 border-white">
-          Where I have Worked
-        </h1>
+    <Section className="h-screen flex flex-col  justify-center ">
+      <h1 className="text-5xl font-bold  mb-10 border-b-2 border-white">
+        Where I have Worked
+      </h1>
+      <div className="w-[800px] ">
         <div className="flex gap-12 ">
           <div className="flex flex-col items-center relative gap-5">
             {workData.map((data, i) => {
               return (
-                <div key={i} className=" relative">
-                  <div
-                    className={`${
-                      buttonState.title === data.workPlace
-                        ? "w-full h-3 bg-green-600"
-                        : ""
-                    } absolute top-1/2`}
-                  ></div>
+                <div key={i} className="relative ">
+                  {/* <div className="w-12 h-12 bg-green-500 blur-xl absolute"></div> */}
                   <button
-                    className="w-24 h-24 bg-white rounded-full flex items-center justify-center opacity-20 hover:opacity-100"
+                    className={`w-24 h-24 bg-white rounded-full flex items-center justify-center opacity-20 hover:opacity-100  ${
+                      buttonState.index === i ? "opacity-100" : ""
+                    }`}
                     onClick={() => handleClick(data, i)}
                   >
                     <Image src={data.img} height={60} alt="logo" />

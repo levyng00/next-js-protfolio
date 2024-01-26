@@ -12,6 +12,7 @@ const CustomInput = ({
   className,
   heading,
   title,
+  name,
   placeholder,
   ...props
 }: customInput) => {
@@ -41,6 +42,7 @@ const CustomInput = ({
           borderBottom: isFocussed ? "1px solid purple" : "1px solid white",
         }}
         onBlur={handleBlur}
+        name={name}
       />
     </div>
   );

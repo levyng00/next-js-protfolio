@@ -1,21 +1,23 @@
 "use client";
 import Section from "@/lib/Section";
-import React, { useState } from "react";
-import { useRef } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import CustomInput from "../CustomInput";
-const Contact = () => {
-  const inputElement = useRef();
-  const form = useRef();
+import { useToast } from "@/components/ui/use-toast";
 
-  const [input, setInput] = useState(false);
+const Contact = () => {
+  const { toast } = useToast();
+  const form = useRef<string | HTMLFormElement>(null);
   const sendEmail = (e) => {
     e.preventDefault();
-
+    toast({
+      title: "Message sent",
+      description: "Thank you for the feedback stay sane!✨❤️",
+    });
     emailjs
       .sendForm(
         "service_jwuvscj",
-        "template_uoe49eg",
+        "contact_form",
         form.current,
         "cpxpcxcPA_7QFoEFQ"
       )
@@ -28,39 +30,8 @@ const Contact = () => {
         }
       );
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(input);
-  };
   return (
     <Section className="mt-20 ">
-      {/* <div className="flex flex-col items-center">
-        <h1 className="text-5xl font-bold text-center border-b-2 border-white">
-          Send me a message!
-        </h1>
-        <p className="text-xl mt-3 text-center">
-          Got a question or proposal, or just want to say hello? Go ahead.
-        </p>
-      </div>
-      <form
-        className=" flex flex-col items-center  gap-4 mt-5 "
-        onSubmit={handleSubmit}
-      >
-        <div className="flex gap-6">
-          <div className="flex flex-col flex-1  w-full">
-            <CustomInput heading="Your Name" placeholder="Name" />
-          </div>
-          <div className="flex flex-col flex-1">
-            <CustomInput heading="Email" placeholder="Email" />
-          </div>
-        </div>
-        <div className="flex flex-col w-full">
-          <CustomInput heading="Your Message" placeholder="Enter Message" />
-        </div>
-        <button className="bg-green-600 w-1/2 p-2 py-4  font-semibold">
-          HMU!
-        </button>
-      </form> */}
       <form ref={form} onSubmit={sendEmail}>
         <h1 className="text-5xl text-center font-bold">Send me a message</h1>
         <div className="flex gap-10 mt-9 ">
@@ -69,16 +40,22 @@ const Contact = () => {
               heading="Name"
               placeholder="Enter Name"
               className="bg-slate-100"
+              name="user_name"
             />
           </div>
           <div className="flex-1">
-            <CustomInput heading="Email" placeholder="Enter Email" />
+            <CustomInput
+              heading="Email"
+              placeholder="Enter Email"
+              name="email"
+            />
           </div>
         </div>
         <div className="mt-5">
           <CustomInput
             heading="Send a message"
             placeholder="Enter your message"
+            name="message"
           />
         </div>
         <div className="flex justify-center mt-5">

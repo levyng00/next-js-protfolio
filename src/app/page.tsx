@@ -9,21 +9,18 @@ import NavMenu from "@/components/navMenu/NavMenu";
 import Projects from "@/components/projects/Projects";
 import { useNavStore } from "@/hooks/store/useStore";
 import useMousePosition from "@/hooks/usePointer";
-import Layout from "@/lib/Layout";
+
 import Section from "@/lib/Section";
 import { motion } from "framer-motion";
 export default function Home() {
   const navState = useNavStore((state) => state.navState);
   return (
-    <Layout>
-      <div className={`${navState ? "h-screen overflow-hidden" : ""}`}>
-        <Landing />
-       
-        <AboutMe />
-        <WhereWork />
-        <Projects />
-        <Contact />
-      </div>
-    </Layout>
+    <div className={`${navState ? "h-screen overflow-hidden" : ""}`}>
+      <Landing />
+      <AboutMe />
+      <WhereWork />
+      <Projects />
+      <Contact />
+    </div>
   );
 }

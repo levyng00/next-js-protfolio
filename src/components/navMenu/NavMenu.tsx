@@ -13,7 +13,7 @@ const NavMenu = () => {
     <AnimatePresence>
       {updateNavState && (
         <motion.div
-          className="absolute h-screen bg-black w-screen"
+          className="absolute h-screen bg-black w-screen "
           initial={{ y: -1000 }}
           animate={{
             // scale: [0, 1],

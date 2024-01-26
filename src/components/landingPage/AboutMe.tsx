@@ -21,9 +21,9 @@ const AboutMe = () => {
             top: "50%",
             borderRadius: "100%",
             right: 0,
-            width: "20px",
-            height: "20px",
-            border: "1px solid red",
+            width: "25px",
+            height: "25px",
+            border: "4px solid red",
             x: -10,
           }}
         />
@@ -31,7 +31,7 @@ const AboutMe = () => {
           return <AboutCard key={i} data={data} />;
         })}
       </div>
-      <div className=" w-[3px] h-[100%] bg-white absolute top-0 rounded-lg"></div>
+      <div className=" w-[5px] h-[100%] bg-white absolute top-0 rounded-lg"></div>
     </Section>
   );
 };
@@ -43,7 +43,7 @@ const aboutMeData = [
   },
   {
     title: "Background",
-    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination empowers me to drive the growth of a product from its inception. As an exceptional analytical thinker, I possess the ability to uphold the product's vision throughout its entire journey, effectively bridging the technical and product aspects. By leveraging my expertise, I can navigate the path from 0 to 1, ensuring the product's success at every stage.",
+    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination empowers me to drive the growth of a product from its inception. As an exceptional analytical thinker, I possess the ability to uphold the product's vision throughout its entire journey, effectively bridging the technical and product aspects. By leveraging my expertise, I can navigate the path from 0 to 1, ensuring the.",
   },
   {
     title: "When I'am off the screen",
