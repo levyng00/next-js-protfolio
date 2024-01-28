@@ -47,11 +47,11 @@ const aboutMeData = [
   },
   {
     title: "When I'am off the screen",
-    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination empowers me to drive th.",
+    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination ",
   },
   {
     title: "Technologies I've Worked With",
-    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination empowers me to drive the growth of a product from itse inception. As an exceptional analytical thinker, I possess the ability to uphold the product's vision throughout its entire journey, effectively bridging the technical and product aspects. By leveraging my expertise, I can navigate the path from 0 to 1, ensuring the product's success at every stage.",
+    desc: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination empowers me to drive the growth of a product from itse inception. As an exceptional analytical thinker, I possess the ability to uphold the product's vision throughout its entire journey, effectively bridging the technical and product aspects. By leveraging my expertise, I can navigate ",
   },
   {
     title: "Bestfriend/Mentor @ Albert Yumanm",
