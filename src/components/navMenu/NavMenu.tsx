@@ -5,23 +5,21 @@ import Link from "next/link";
 import Section from "@/lib/Section";
 const NavMenu = () => {
   const updateNavState = useNavStore((state) => state.updateNavState);
-  const [clickedItem, setClickedItem] = useState("");
-  const handleClick = (item, i) => {
+  const [clickedItem, setClickedItem] = useState(null);
+  const handleClick = (item:string, i) => {
     setClickedItem(item);
   };
   return (
     <AnimatePresence>
       {updateNavState && (
         <motion.div
-          className="absolute h-screen bg-black w-screen "
+          className="absolute h-screen bg-black w-screen z-[999] "
           initial={{ y: -1000 }}
           animate={{
-            // scale: [0, 1],
             y: 0,
             opacity: [],
           }}
           exit={{
-            // scale: [0, 1],
             y: -1000,
           }}
           transition={{ type: "spring", ease: "easeInOut", duration: 0.8 }}

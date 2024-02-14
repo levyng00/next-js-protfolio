@@ -10,7 +10,7 @@ const Navbar = () => {
   const navState = useNavStore((state) => state.navState);
   return (
     <>
-      <Section className="bg-purple-500">
+      <Section className="">
         <nav className="flex justify-end ">
           <div className="flex items-center gap-8">
             <ThemeToggle />
@@ -18,7 +18,7 @@ const Navbar = () => {
           </div>
         </nav>
       </Section>
-      <div className="">{navState && <NavMenu />}</div>
+      <div className="z-[999]">{navState && <NavMenu />}</div>
     </>
   );
 };
