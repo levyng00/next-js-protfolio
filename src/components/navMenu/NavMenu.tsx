@@ -42,7 +42,7 @@ const NavMenu = () => {
                     >
                       {item.item}
                     </Link>
-                    {/* <div className=" bg-slate-800 w-1/5 h-1 relative bottom-9"></div> */}
+                  
                   </li>
                 </ul>
               );
