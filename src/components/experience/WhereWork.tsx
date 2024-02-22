@@ -81,8 +81,7 @@ const workData: work[] = [
     img: tweakLogo,
     desc: [
       "Developed and styled interactive web applications for Apple Music using Ember and SCSS",
-      "Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations",
-
+      "Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API ",
     ],
   },
   {
@@ -93,7 +92,7 @@ const workData: work[] = [
     desc: [
       "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
       "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness",
-      "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
+      "Clients included JetBlue, Lovesac, U.S. Cellular,e",
     ],
   },
 ];
