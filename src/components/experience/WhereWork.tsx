@@ -81,7 +81,7 @@ const workData: work[] = [
     img: tweakLogo,
     desc: [
       "Developed and styled interactive web applications for Apple Music using Ember and SCSS",
-      "Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API ",
+      "Built and shipped the Apple Music Extension for ger leveraging third-party and internal API ",
     ],
   },
   {
