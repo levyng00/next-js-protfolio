@@ -80,7 +80,7 @@ const workData: work[] = [
     date: "Nov - Feb 2023",
     img: tweakLogo,
     desc: [
-      "Developed and styled interactive web  for Apple Music using Ember and SCSS",
+      "Developed and  interactive web  for Apple Music using Ember and SCSS",
       "Built and shipped the Apple Music Extension for ger  third-party aal API ",
     ],
   },
