@@ -90,8 +90,7 @@ const workData: work[] = [
     date: "Nov - Feb 2023",
     img: bonLogo,
     desc: [
-      "Clients included JetBlue, U.S. , U.S. Department of Defense, and more",
-      "Performed quality assurance tests on various sites to  cross-browser compatibility and mobile responsiveness",
+      "Clients included JetBlue, U.S. , U.S. Department of Defens\ss-browser compatibility and mobile responsiveness",
       "Clients included JetBlue, Lovesac, U.S. Cellular,e",
     ],
   },
